@@ -5,9 +5,99 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
-    <title>Js</title>
+    <title>Test-Form</title>
 </head>
 <body>
+    <div class="form__wrapper">
+        <form class="form">
+            <div class="form__inputs-wrapper">
+                <input class="form__name" type="text" placeholder="название">
+                <input class="form__price" type="number" placeholder="стоимость">
+                <select class="form__select">
+                    <option value="Категория" disabled>Категория</option>
+                    <option value="Курсы" selected>Курсы</option>
+                    <option value="Проекты">Проекты</option>
+                    <option value="Работа">Работа</option>
+                    <option value="Недвижимость">Недвижимость</option>
+                </select>
+            </div>
+            <div class="form__description">
+                <div class="form__radio-wrapper">
+                    <label class="form__radio-label">
+                        <input class="form__radio" type="radio" name="search">
+                        Ищу ивеститции
+                    </label>
+                    <label class="form__radio-label">
+                        <input class="form__radio" type="radio" name="search">
+                        Ищу партнера
+                    </label>
+                    <label class="form__radio-label">
+                        <input class="form__radio" type="radio" name="search">
+                        Вложу
+                    </label>
+                </div>
+                <h2 class="form__description-heading">
+                    Описание
+                </h2>
+                <div class="form__description-item">
+                    <img src="./images/equa.svg" alt="icon">
+                    <div class="form__item-wrapper">
+                        <h3 class="form__item-heading">свойства и детали</h3>
+                        <p class="form__item-text">
+                            например , квадратура , размеры и т.д. <br>
+                            Сначала выберите категорию
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="form__property">
+                    <label class="form__property-item">
+                        <p class="form__property-text">Отрасаль</p>
+                        <input class="form__property-input" type="text">
+                    </label>
+                    <label class="form__property-item">
+                        <p class="form__property-text">Местоположение</p>
+                        <input class="form__property-input" type="text">
+                    </label>
+                    <label class="form__property-item">
+                        <p class="form__property-text">Стадия проекта</p>
+                        <input class="form__property-input" type="text">
+                    </label>
+                    <label class="form__property-item">
+                        <p class="form__property-text">Срок реализации</p>
+                        <input class="form__property-input" type="text">
+                    </label>
+                    <label class="form__property-item">
+                        <p class="form__property-text">Срок окупаемости</p>
+                        <input class="form__property-input" type="text">
+                    </label>
+                </div>
+                <div class="form__description-item">
+                    <img src="./images/tube.svg" alt="icon">
+                    <input type="text" placeholder="ссылка на видео">
+                </div>
+                <div class="form__description-item">
+                    <img src="./images/img.svg" alt="icon">
+                    <label class="form__img-wrapper">
+                        <input class="form__input-img" onchange="download(this)" type="file" accept=".jpg, .jpeg, .png , .svg">
+                        Загрузите картинки
+                    </label>
+                </div>
+                <ul class="form__images-list">
+                        
+                </ul>
+                <textarea class="form__description-item" cols="30" rows="10">
+                    
+                </textarea>
+                <div class="form__comments">
+                    <img src="./images/comment.svg" alt="icon" width="30" height="30">
+                    <p class="form__comments-text">Коментарии разрешены</p>
+                    <input class="form__comments-checkbox" type="checkbox">
+                </div>
+                <button class="form__create-button">создать</button>
+            </div>
+        </form>
+    </div>
     <script src="./js/main.js"></script>
 </body>
 </html>
